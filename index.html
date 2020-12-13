@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Smoothiedo</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <nav id="navbar">
+        <a href="#"><img src="./images/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#what's_new">What's New</a></li>
+        </ul>
+      </nav>
+      <div class="circle"></div>
+      <section>
+        <div class="content">
+          <h1>Smoothiedo</h1>
+          <span>Sip of happy Delights.</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            bibendum elit, et vehicula libero. Nullam at arcu dui. Quisque
+            volutpat malesuada dignissim. Etiam eu ligula sit amet lorem
+            elementum.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="main-img">
+          <img src="./images/img2.png" alt="" class="m-img" />
+        </div>
+      </section>
+      <ul class="icons">
+        <li>
+          <a href="#"
+            ><img src="./images/facebook.png" alt="" class="f-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/twitter.png" alt="" class="t-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/instagram.png" alt="" class="i-icon"
+          /></a>
+        </li>
+      </ul>
+      <div class="thumbs">
+        <a href="#"
+          ><img
+            src="./images/thumb2.png"
+            onclick="backgroundClr('#efc0cd');changeImg('./images/img2.png')"
+            alt=""
+        /></a>
+        <a href="#"
+          ><img
+            src="./images/thumb1.png"
+            onclick="backgroundClr('#086C40');changeImg('./images/img1.png')"
+            alt=""
+        /></a>
+        <a href="#"
+          ><img
+            src="./images/thumb3.png"
+            onclick="backgroundClr('#fa9ac1');changeImg('./images/img3.png')"
+            alt=""
+        /></a>
+      </div>
+    </div>
+
+    <script>
+      const circle = document.querySelector('.circle');
+      const img = document.querySelector('.m-img');
+      const changeImg = (image) => {
+        img.src = image;
+      };
+      const backgroundClr = (color) => {
+        circle.style.background = color;
+      };
+    </script>
+  </body>
+</html>
